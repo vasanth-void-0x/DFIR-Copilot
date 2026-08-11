@@ -61,15 +61,15 @@ substantive answer must cite case artifact IDs.
 
 | Evidence & Case Management | Timeline Reconstruction |
 |---|---|
-| ![Evidence view](screenshots/evidence.png) | ![Timeline view](screenshots/timeline.png) |
+| ![Evidence view](Screenshots/evidence.png) | ![Timeline view](Screenshots/timeline.png) |
 
 | Correlated Findings | Evidence-Grounded Copilot |
 |---|---|
-| ![Findings view](screenshots/findings.png) | ![Copilot view](screenshots/copilot.png) |
+| ![Findings view](Screenshots/findings.png) | ![Copilot view](Screenshots/copilot.png) |
 
 | Generated Report |
 |---|
-| ![Report output](screenshots/report.png) |
+| ![Report output](Screenshots/report.png) |
 
 ## Desktop workflow
 
