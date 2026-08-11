@@ -1,0 +1,4 @@
+timestamp,name,path,status,extension,size,notes
+2026-08-09T10:25:36Z,invoice_viewer.ps1.txt,C:\Users\training-user\$Recycle.Bin,Deleted,.txt,412,Deleted after outbound connection
+2026-08-09T10:26:01Z,payload.bin,C:\Users\training-user\AppData\Local\Temp,Deleted,.bin,2048,Synthetic record only; no payload is included
+

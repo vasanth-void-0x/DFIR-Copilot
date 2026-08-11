@@ -1,0 +1,81 @@
+{
+  "case_note": "Synthetic safe evidence. All domains and IP addresses are reserved for documentation.",
+  "events": [
+    {
+      "timestamp": "2026-08-09T10:15:02Z",
+      "event_type": "Browser Download",
+      "source": "Edge History",
+      "description": "User downloaded invoice_viewer.zip from hxxps://updates-example.invalid/invoice_viewer.zip",
+      "severity": "Medium",
+      "mitre_id": "T1105",
+      "username": "training-user",
+      "destination": "C:\\Users\\training-user\\Downloads\\invoice_viewer.zip"
+    },
+    {
+      "timestamp": "2026-08-09T10:16:11Z",
+      "event_type": "File Creation",
+      "source": "Sysmon Event ID 11",
+      "description": "invoice_viewer.ps1.txt was created in the Downloads folder after archive extraction",
+      "severity": "Low",
+      "mitre_id": "T1140",
+      "path": "C:\\Users\\training-user\\Downloads\\invoice_viewer.ps1.txt"
+    },
+    {
+      "timestamp": "2026-08-09T10:17:08Z",
+      "event_type": "PowerShell Execution",
+      "source": "PowerShell Event ID 4104",
+      "description": "PowerShell executed a training script containing Invoke-WebRequest",
+      "severity": "High",
+      "mitre_id": "T1059.001",
+      "command_line": "powershell.exe -ExecutionPolicy Bypass -File invoice_viewer.ps1.txt"
+    },
+    {
+      "timestamp": "2026-08-09T10:17:31Z",
+      "event_type": "Process Creation",
+      "source": "Security Event ID 4688",
+      "description": "A child process was created by powershell.exe",
+      "severity": "Medium",
+      "mitre_id": "T1059.001",
+      "parent_image": "powershell.exe",
+      "image": "rundll32.exe"
+    },
+    {
+      "timestamp": "2026-08-09T10:18:04Z",
+      "event_type": "Network Connection",
+      "source": "Sysmon Event ID 3",
+      "description": "PowerShell established an outbound HTTPS connection to documentation IP 203.0.113.77",
+      "severity": "High",
+      "mitre_id": "T1071.001",
+      "source_process": "powershell.exe",
+      "destination_ip": "203.0.113.77",
+      "destination_port": 443
+    },
+    {
+      "timestamp": "2026-08-09T10:18:15Z",
+      "event_type": "DNS Query",
+      "source": "Sysmon Event ID 22",
+      "description": "DNS query for updates-example.invalid",
+      "severity": "Medium",
+      "mitre_id": "T1071.004",
+      "query_name": "updates-example.invalid"
+    },
+    {
+      "timestamp": "2026-08-09T10:20:42Z",
+      "event_type": "Security Detection",
+      "source": "Microsoft Defender training export",
+      "description": "Defender recorded suspicious PowerShell behavior in the synthetic exercise",
+      "severity": "High",
+      "mitre_id": "T1059.001"
+    },
+    {
+      "timestamp": "2026-08-09T10:22:19Z",
+      "event_type": "Service Installation",
+      "source": "System Event ID 7045",
+      "description": "TrainingUpdate service was registered from a user-writable directory",
+      "severity": "High",
+      "mitre_id": "T1543.003",
+      "service_name": "TrainingUpdate"
+    }
+  ]
+}
+
