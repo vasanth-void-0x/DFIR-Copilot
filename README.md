@@ -57,6 +57,20 @@ substantive answer must cite case artifact IDs.
 - Machine-readable JSON case export
 - Evidence inventory, findings, timeline, custody, and examiner warning
 
+## Screenshots
+
+| Evidence & Case Management | Timeline Reconstruction |
+|---|---|
+| ![Evidence view](screenshots/evidence.png) | ![Timeline view](screenshots/timeline.png) |
+
+| Correlated Findings | Evidence-Grounded Copilot |
+|---|---|
+| ![Findings view](screenshots/findings.png) | ![Copilot view](screenshots/copilot.png) |
+
+| Generated Report |
+|---|
+| ![Report output](screenshots/report.png) |
+
 ## Desktop workflow
 
 ```mermaid
